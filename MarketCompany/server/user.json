@@ -1,0 +1,13 @@
+{
+  "user": [
+    {
+      "id": 143,
+      "username": "annu",
+      "password": "iloveyou",
+      "admin": true,
+      "email": "annu@gmail.com",
+      "phone": 12345,
+      "confirm": true
+    }
+  ]
+}
