@@ -10,6 +10,12 @@ import { RegisterComponent } from './register/register.component';
 import { from } from 'rxjs';
 import { UserlistComponent } from './userlist/userlist.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CreatecompanyComponent } from './admin/createcompany/createcompany.component';
+import { ImportdataComponent } from './admin/importdata/importdata.component';
+import { ManagecompanyComponent } from './admin/managecompany/managecompany.component';
+import { ManageexchangeComponent } from './admin/manageexchange/manageexchange.component';
+import { UpdateioComponent } from './admin/updateio/updateio.component';
+import { AdminComponent } from './admin/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +23,13 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     HomeComponent,
     RegisterComponent,
-    UserlistComponent
+    UserlistComponent,
+    CreatecompanyComponent,
+    ImportdataComponent,
+    ManagecompanyComponent,
+    ManageexchangeComponent,
+    UpdateioComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

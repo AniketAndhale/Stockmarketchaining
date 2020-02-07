@@ -2,12 +2,21 @@
   "user": [
     {
       "id": 143,
-      "username": "annu",
-      "password": "iloveyou",
+      "username": "admin",
+      "password": "admin",
       "admin": true,
       "email": "annu@gmail.com",
       "phone": 12345,
       "confirm": true
+    },
+    {
+      "id": 144,
+      "username": "ff",
+      "password": "rgv",
+      "admin": "false",
+      "email": "gver",
+      "phone": 658852,
+      "confirm": "false"
     }
   ]
 }
