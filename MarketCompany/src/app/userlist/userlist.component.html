@@ -3,27 +3,33 @@
         <tr>
             <th>Id</th>
             <th>Username</th>
-            <th>Password</th>
-            <th>Admin</th>
+            <th>Password1</th>
+            <th>password2</th>
             <th>Email</th>
             <th>Phone</th>
-            <th>Confirm</th>
-            <th>Actions</th>
+            <th>Action</th>
+             
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let user of users">
             <td>{{user.id}}</td>
             <td>{{user.username}}</td>
-            <td>{{user.password}}</td>
-            <td>{{user.admin}}</td>
+            <td>{{user.password1}}</td>
+            <td>{{user.password2}}</td>
             <td>{{user.email}}</td>
             <td>{{user.phone}}</td>
-            <td>{{user.confirm}}</td>
             <td>
-                <button class="btn btn-info">Update</button>
+                <button class="btn btn-info" (click)="updateUser(user.id)">Update</button>
                 <button class="btn btn-danger" (click)="deleteUser(user)">Delete</button>
             </td>
         </tr>
     </tbody>
 </table>
+
+<div class=" text-center">
+    <button class="btn  btn-warning" >
+    <a  routerLink="/register">Register</a></button>
+    </div>
+
+

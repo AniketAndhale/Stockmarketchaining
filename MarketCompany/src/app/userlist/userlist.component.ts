@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserserviceService } from '../userservice.service';
 import { User } from 'src/modals/User';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-userlist',
@@ -9,7 +10,7 @@ import { User } from 'src/modals/User';
 })
 export class UserlistComponent implements OnInit {
 
-  constructor(private userService:UserserviceService) { }
+  constructor(private userService:UserserviceService, private router:Router) { }
 
   users:User[];
 
@@ -21,8 +22,14 @@ export class UserlistComponent implements OnInit {
 
   deleteUser(user:User){
     this.userService.deleteUser(user.id).subscribe(data=>{
-      alert('User Deleted successfully');
-    })
+      this.users = this.users.filter(u=> u !== user)
+    })  
   }
+  updateUser(id:number){
+    localStorage.removeItem('userId');
+    localStorage.setItem('userId',id.toString());
+    this.router.navigate(['update-user']);
+  }
+
 
 }

@@ -6,4 +6,5 @@ export class User{
     email:string;
     phone:number;
     confirm:boolean;
+    regStatus:string;
 }

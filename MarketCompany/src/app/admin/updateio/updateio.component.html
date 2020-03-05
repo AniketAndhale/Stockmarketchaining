@@ -1,1 +1,35 @@
-<p>updateio works!</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>CompanyName</th>
+            <th>StockExchange</th>
+            <th>PricePerShare</th>
+            <th>TotalStocks</th>
+            <th>Remark</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ipo of ipo">
+            <td>{{ipo.id}}</td>
+            <td>{{ipo.companyName}}</td>
+            <td>{{ipo.stockExchange}}</td>
+            <td>{{ipo.pricePerShare}}</td>
+            <td>{{ipo.totalStocks}}</td>
+            <td>{{ipo.remarks}}</td>
+            <td>
+                <button class="btn btn-info" (click)="updateIPO(ipo.id)">Update</button>
+                <button class="btn btn-danger" (click)="deleteIPO(ipo)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<div class=" text-center">
+    <button class="btn  btn-warning" >
+    <a  routerLink="/user/ipo">Add IPO</a></button>
+    </div>
+

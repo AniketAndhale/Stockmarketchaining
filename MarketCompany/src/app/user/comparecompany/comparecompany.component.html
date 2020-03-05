@@ -1,0 +1,65 @@
+
+<div class="">
+    <h2 class="text-center">Compare Company</h2>
+    <div class="container">
+        <form class=" w-50 container" [formGroup]="comparecompanyForm"  (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="id">ID</label>
+                <input type="text" class="form-control " name="id" formControlName="id"
+                placeholder="Enter ID">
+            </div>
+
+
+            <div class="form-group">
+                <label for="selectcompany">Select Company/sector</label>
+                <!-- <input type="text" class="form-control " name="selectcompany" formControlName="selectcompany"
+                placeholder="Select Company or sector"> -->
+                <select class="browser-default custom-select" formControlName="selectcompany">
+                    <option selected>select company/sector</option>
+                    <option value="1">Company</option>
+                    <option value="2">sector</option>
+    
+                  </select>
+            </div>
+            <div class="form-group">
+                <label for="selectstock">Select Stock Exchange</label>
+                <!-- <input type="text" class="form-control " name="stockexchange" formControlName="stockexchange"
+                placeholder="Select Stock Exchange"> -->
+                <select class="browser-default custom-select" formControlName="selectstock" >
+                    <option selected>select Stock Exchange  </option>
+                    <option value="1">BSE</option>
+                    <option value="2">NSE</option>
+                    
+                 </select>
+
+            </div>
+
+            <div class="form-group">
+                <label for="ceoname">Company Name</label>
+                <input type="text" class="form-control " name="companyname" formControlName="companyname"
+                placeholder="Enter Company Name">
+            </div>
+            
+            <div class="form-group row">
+                <label for="from period" class="col-2 col-form-label">From Period</label>
+                <div class="col-10">
+                  <input class="form-control" type="date" value="2011-08-19" id="fperiod" formControlName="fperiod"  name="fperiod">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="from period" class="col-2 col-form-label">To Period</label>
+                <div class="col-10">
+                  <input class="form-control" type="date" value="2011-08-19" id="tperiod" formControlName="tperiod"  name="fperiod">
+                </div>
+            </div>
+            
+              
+                <div class="form-group">
+                <button class="btn btn-success" (click)=" generateMap()">Generate Map</button>
+                         
+                </div>
+                
+            </form>
+    </div>
+    </div> 
+

@@ -1,0 +1,85 @@
+<!-- 
+<html>
+    <head>
+      <title>UserHomepage</title>
+      
+      </head>
+  <body>
+      <div class="container  ">
+          <h2 class="text-center text-dark ">User Landing Page</h2> 
+         
+         </div>
+          
+         <div class="list-group w-25 text-center">
+         <a routerLink="ipo" class="list-group-item list-group-item-danger">
+             <h4 class="list-group-item-heading">Ipo</h4>
+         </a>
+      
+      <a routerLink="comparecompanylist" class="list-group-item list-group-item-warning">
+        <h4 class="list-group-item-heading">CompareCompany</h4>
+    </a>
+      
+    <a routerLink="comparesector" class="list-group-item list-group-item-danger">
+        <h4 class="list-group-item-heading">CompareSector</h4>
+    </a> 
+    
+    
+         </div>
+         <router-outlet></router-outlet>
+
+
+         
+         </body>
+         </html>
+         
+         
+           
+    
+   -->
+
+   <html>
+
+<head>
+    <title>UserHomepage</title>
+
+</head>
+
+<body>
+    <div class="container  ">
+
+
+        <h2 class="text-center text-dark ">User Landing</h2>
+        <div class="row">
+            <div class="mx-auto mt-5">
+                <ul class="list-group text-center no-decoration">
+                    <li><a routerLink="comparecompany" class="list-group-item list-group-item-danger">
+                        <h4 class="list-group-item-heading">CompareCompany</h4>
+                    </a></li>
+                    <li><a routerLink="comparesector" class="list-group-item list-group-item-warning">
+                        <h4 class="list-group-item-heading">CompareSector</h4>
+                    </a></li>
+                    <li><a routerLink="ipo" class="list-group-item list-group-item-danger">
+                        <h4 class="list-group-item-heading">IPODetail</h4>
+                    </a></li>
+
+                    <!-- <li><a routerLink="managestockexchange" class="list-group-item list-group-item-warning">
+                        <h4 class="list-group-item-heading">ManageExchange</h4>
+                    </a></li>
+                    <li><a routerLink="/sectorlist" class="list-group-item list-group-item-danger">
+                        <h4 class="list-group-item-heading">Sector</h4>
+                    </a></li>
+                    <li><a routerLink="/stockpricelist" class="list-group-item list-group-item-warning">
+                        <h4 class="list-group-item-heading">StockPrice</h4>
+                    </a></li>
+                    <li><a routerLink="/displayuser" class="list-group-item list-group-item-danger">
+                        <h4 class="list-group-item-heading">UserList</h4>
+                    </a></li>
+                     -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</body>
+
+</html>

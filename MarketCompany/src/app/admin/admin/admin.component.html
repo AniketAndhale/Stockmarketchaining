@@ -1,38 +1,45 @@
 <html>
-  <head>
+
+<head>
     <title>AdminHomepage</title>
-    
-    </head>
+
+</head>
+
 <body>
-    
-<div class="container  ">
- <h2 class="text-center text-dark ">Admin Landing</h2> 
-
-</div>
- 
-<div class="list-group w-25 text-center">
-    <a routerLink="importdata" class="list-group-item list-group-item-primary">
-    
-    <h4 class="list-group-item-heading">Importdata</h4>
-</a>
-<a routerLink="createcompany" class="list-group-item list-group-item-success">
-    <h4 class="list-group-item-heading">CreateCompany</h4>
-</a>
-<a routerLink="managecompany" class="list-group-item list-group-item-secondary">
-    <h4 class="list-group-item-heading">ManageCompany</h4>
-</a>
-<a routerLink="manageexchange" class="list-group-item list-group-item-success">
-    <h4 class="list-group-item-heading">ManageExchange</h4>
-</a>
-<a routerLink="updateio" class="list-group-item list-group-item-info">
-    <h4 class="list-group-item-heading">UpdateIo</h4>
-</a>
+    <div class="container  ">
 
 
-</div>
-<router-outlet></router-outlet>
+        <h2 class="text-center text-dark ">Admin Landing</h2>
+        <h4 class="text-center text-dark">Its a Admin Landing Page.Admin can perform any Operation here.</h4>
+        <div class="row">
+            <div class="mx-auto mt-5">
+                <ul class="list-group text-center no-decoration">
+                    <li><a routerLink="importdata" class="list-group-item list-group-item-danger">
+                        <h4 class="list-group-item-heading">Importdata</h4>
+                    </a></li>
+                    <li><a routerLink="managecompany" class="list-group-item list-group-item-warning">
+                        <h4 class="list-group-item-heading">ManageCompany</h4>
+                    </a></li>
+                    <li><a routerLink="updateio" class="list-group-item list-group-item-danger">
+                        <h4 class="list-group-item-heading">UpdateIPODetail</h4>
+                    </a></li>
+                    <li><a routerLink="managestockexchange" class="list-group-item list-group-item-warning">
+                        <h4 class="list-group-item-heading">ManageExchange</h4>
+                    </a></li>
+                    <li><a routerLink="/sectorlist" class="list-group-item list-group-item-danger">
+                        <h4 class="list-group-item-heading">Sector</h4>
+                    </a></li>
+                    <li><a routerLink="/stockpricelist" class="list-group-item list-group-item-warning">
+                        <h4 class="list-group-item-heading">StockPrice</h4>
+                    </a></li>
+                    <li><a routerLink="/displayuser" class="list-group-item list-group-item-danger">
+                        <h4 class="list-group-item-heading">UserList</h4>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
 </body>
+
 </html>
-
-
-

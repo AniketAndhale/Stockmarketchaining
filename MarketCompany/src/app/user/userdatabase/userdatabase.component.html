@@ -1,0 +1,48 @@
+<header style="color: rgb(21, 37, 54);" class="text-center"><h2>Stock Market Charting</h2></header>
+    <div class="jumbotron jumbotron-fluid">
+        <h2 class="text-center">UserDatabase</h2>
+        <div class="container">
+            <form class=" w-50 container" [formGroup]="registerUser"  (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="id">Id</label>
+                    <input type="number" class="form-control " name="id" formControlName="id"
+                    placeholder="Enter Id with max 5 digits">
+                </div>
+                <div class="form-group">
+                        <label for="username">User Name</label>
+                        <input type="text" class="form-control " name="username" formControlName="username"
+                        placeholder="Enter username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control " name="password" formControlName="password"
+                        placeholder="Enter password">
+                    </div>
+                    <div class="form-group">
+                        <label for="usertype">UserType</label>
+                        <input type="text" class="form-control " name="usertype" formControlName="usertype"
+                        placeholder="Enter type of user">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control " name="email" formControlName="email"
+                        placeholder="@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">PhoneNumber</label>
+                        <input type="number" class="form-control " name="phonenumber" formControlName="phonenumber"
+                        placeholder="Enter your number">
+                    </div>
+                    <div class="form-group">
+                    <button class="btn btn-success" (click)="addUser()" [disabled]="!registerUser.valid">AddUser</button>
+                             do u want to reset?
+                             <button type="reset" onsubmit="onSubmit()" class="btn  btn-success px-5 mx-3">reset</button>       
+                    </div>
+                    
+                </form>
+        </div>
+        </div>
+
+
+
